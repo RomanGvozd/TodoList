@@ -1,0 +1,111 @@
+@keyframes spawnModal {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+.modal-background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    .modal {
+        width: 50Vw;
+        max-width: 500px;
+        height: auto;
+        margin-top: 100px;
+        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+        background-color: rgb(255, 255, 255);
+        padding: 20px 50px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation-duration: 0.6s;
+        animation-name: spawnModal;
+
+        .modal__input {
+            width: 90%;
+            height: 50px;
+            background: none;
+            border: 2px solid #8f8da5;
+            border-radius: 5px;
+            padding: 0 20px;
+            margin: 5px;
+            color: #5a5ee7;
+            font-size: 20px;
+            transition: 0.3s;
+
+            &::placeholder {
+                color: #d2d3e3;
+
+              }
+
+            &:focus { 
+                border: 2px solid #5a5ee7;
+                outline: none;
+                width: 100%;
+                border-radius: 10px;
+
+            }
+
+        }
+        
+        .modal__wrapper-btn {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            .modal__submit {
+                width: 100px;
+                height: 30px;
+                background-color: rgb(16, 230, 69);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 5px;
+                transition: 0.3s;
+                
+                &:hover {
+                    background-color: #5a5ee7;;
+
+                }
+
+            }           
+            
+            .modal__delete {
+                width: 100px;
+                height: 30px;
+                background-color: #f57173;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 5px;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #5a5ee7;;
+                    
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+  

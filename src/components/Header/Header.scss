@@ -1,0 +1,54 @@
+.header {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid silver;
+    padding: 5px 20px;
+    position: relative;
+
+    .wrapper-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            color: #5a5ee7;;
+            margin: 10px 0px;
+            font-size: 45px;
+            font-weight: 400;
+    
+        }
+    
+        .sub-logo {
+            color: silver;
+            margin: 10px 0px;
+            font-size: 25px;
+            font-weight: 400;
+    
+        }
+    
+        .number-tasks {
+            color: silver;
+            font-size: 25px;
+            font-weight: 400;
+    
+        }
+
+    }
+
+    .add-todo {
+        width: 60px;
+        height: 60px;
+        background-color: #f57173;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        bottom: -30px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 100;
+        cursor: pointer;
+
+    }
+
+}

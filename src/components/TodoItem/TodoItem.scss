@@ -1,0 +1,51 @@
+.todo-item {
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    border-bottom: 1px solid silver;
+    list-style-type: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+        border-left: 3px solid #5a5ee7;;
+
+    }
+
+    .todo-item__title {
+        font-size: 20px;
+        color: #8f8da5;
+        width: 100%;
+
+    }
+
+    .todo-item__title-completed {
+        color: #d2d3e3;
+        // opacity: 0.4;
+        text-decoration: line-through;
+
+    }
+
+    .todo-item__time {
+        font-size: 18px;
+        color: #8f8da5;
+        opacity: 0.7;
+        margin: 0 10px;
+
+    }
+
+    .todo-item__delete {
+        width: 70px;
+        height: 20px;
+        background-color: #f57173;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 100;
+        cursor: pointer;
+
+    }
+
+}
